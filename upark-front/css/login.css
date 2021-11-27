@@ -1,0 +1,96 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    width: 100%;
+    background-color: var(--medium-gray);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 110rem;
+    margin: auto 60px;
+}
+
+header nav > ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav > ul > li {
+    font-size: 1.6rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    margin: auto 10px;
+}
+
+header nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav > div {
+    display: none;
+}
+
+.active {
+    border-bottom: 3px solid var(--bg-orange);
+}
+
+/*-----form-login -------*/
+
+.section-form-login {
+    background-image: url('../images/Grupo_3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-login {
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-login h1 {
+    width: 70%;
+    font-size: 3rem;
+    margin: 20px auto;
+    text-align: center;
+    color: var(--bg-blue);
+}
+
+.form-login > input {
+    width: 70%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-login > button {
+    width: 70%;
+    margin: 20px;
+    padding: 10px;
+    background-color: var(--bg-orange);
+    border: none;
+    margin: 20px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}

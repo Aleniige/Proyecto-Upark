@@ -1,0 +1,177 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    width: 100%;
+    background-color: var(--medium-gray);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 110rem;
+    margin: auto 60px;
+}
+
+header nav > ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav > ul > li {
+    font-size: 1.6rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    margin: auto 10px;
+    cursor: pointer;
+}
+
+header nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav > div {
+    display: none;
+}
+
+.active {
+    border-bottom: 3px solid var(--bg-orange);
+}
+
+/*------------- tarjetas parqueadero -----------*/
+
+.section-espacios {
+    max-width: 110rem;
+    width: 90%;
+    font-size: 1.6rem;
+    margin: 30px auto;
+}
+
+.section-espacios h1 {
+    text-transform: uppercase;
+    font-size: 2.8rem
+}
+
+.zona {
+    background-color: var(--ligth-gray);
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.zona > h2 {
+    text-transform: capitalize;
+    width: 100%;
+    padding: 0px 15px;
+}
+
+.section-espacios > div {
+    width: 100%;
+}
+
+.tarjetaEspacio {
+    width: 170px;
+    background-color: var(--medium-gray);
+    padding: 10px;
+    margin: 15px;
+}
+
+.tarjetaEspacioHeader i {
+    font-size: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.tarjetaEspacioBody  {
+    text-align: center;
+}
+
+.tarjetaEspacioBody p {
+    margin: 5px auto;
+}
+
+.tarjetaEspacioBody button {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    background-color: var(--dark-gray);
+    padding: 4px;
+    color: var(--bg-orange);
+}
+
+/*----------- modal -----------*/
+
+.container-reserva {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(46, 46, 46, 0.8);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    visibility: hidden;
+}
+
+.modal-reserva {
+    max-width: 600px;
+    width: 95%;
+    background-color: var(--ligth-gray);
+    padding: 30px;
+    overflow-y: scroll;
+    max-height: 80vh;
+    border-radius: 20px;
+    position: relative;
+}
+.modal-reserva h2 {
+    font-size: 2.8rem;
+    text-transform: capitalize;
+}
+
+.modal-reserva i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 30px;
+    margin-top: 30px;
+    font-size: 3.5rem;
+    cursor:pointer;
+}
+
+.modal-reserva h3 {
+    font-size: 2.2rem;
+    text-transform: capitalize;
+}
+
+.reserva-activa{
+    width: 90%;
+    background-color: var(--medium-gray);
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.reserva-activa h4 {
+    font-size: 1.8rem;
+}
+.formReservaa {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.formReservaa input{
+    width: 100%;
+    border: none;
+    background-color: white;
+    margin: 5px auto;
+    padding: 7px;
+    border-radius: 5px;
+}

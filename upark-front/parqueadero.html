@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/parqueadero.css">
+
+    <title>Upark-Proyect</title>
+
+    <script src="https://kit.fontawesome.com/8801df0847.js" crossorigin="anonymous"></script>
+</head>
+<body onload="cargarEstacionamientos()">
+    <header>
+        <nav>
+            <a href="dashboard.html" class="logo"><img src="./images/logoUpark.png" width="90" alt=""></a>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a class="active" href="#">Parqueadero</a></li>
+            </ul>
+            <ul>
+                <li onclick="cerrarSesion()">Cerrar Seción</li>
+                <li><i class="fas fa-user"></i></a></li>
+            </ul>
+            <div>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section-espacios">
+        <h1>Estacionamientos y zonas</h1>
+        <div id="estacionamientos">
+            
+        </div>
+    </section>
+
+    <div class="container-reserva" id="modal-reserva">
+        
+    </div>
+
+    <script src="js/querysParqueadero.js"></script>
+
+</body>
+</html>

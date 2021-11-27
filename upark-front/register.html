@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/login.css">
+
+    <title>Upark-Proyect</title>
+
+    <script src="https://kit.fontawesome.com/8801df0847.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="./images/logoUpark.png" width="90" alt=""></a>
+            <ul>
+                <li><a href="index.html">Sobre Nosotros</a></li>
+                <li><a href="#">Parqueadero</a></li>
+            </ul>
+            <ul>
+                <li><a href="login.html">Iniciar Seción</a></li>
+                <li><a class="active" href="#">Registrarse</a></li>
+            </ul>
+            <div>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section-form-login">
+        <form id="form-register-id" action="" class="form-login">
+            <h1>Registrarse</h1>
+            <input type="text" name="" id="r-user" placeholder="Nombre" required>
+            <input type="email" name="" id="r-email" placeholder="Email" required>
+            <input type="password" name="" id="r-pass1" placeholder="Contraseña" required>
+            <input type="password" name="" id="r-pass2" placeholder="Confirmar Contraseña" required>
+            <button type="submit">Registrarse</button>
+        </form>
+    </section>
+
+    <script src="./js/querysRegistro.js"></script>
+</body>
+</html>
